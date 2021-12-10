@@ -35,7 +35,29 @@ class MainPage extends StatelessWidget {
                       .pushNamed('/counter_provider_easy_example');
                 },
                 icon: const Icon(Icons.countertops),
-                label: const Text('Counter Provider Easy Example'))
+                label: const Text('Counter Provider Easy Example')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(double.infinity, 55)),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/money_provider_example');
+                },
+                icon: const Icon(Icons.money),
+                label: const Text('Money Provider Example')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(double.infinity, 55)),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/auth_provider_example');
+                },
+                icon: const Icon(Icons.person),
+                label: const Text('Auth Provider Example'))
           ],
         ),
       ),
