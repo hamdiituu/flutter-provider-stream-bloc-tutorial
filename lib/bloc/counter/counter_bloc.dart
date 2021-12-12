@@ -15,13 +15,13 @@ class CounterBloc {
   StreamSink<CounterEvent> get counterEventSink => _counterEventController.sink;
 
   CounterBloc() {
-    _counterEventController.stream.listen((event) {
+    _counterEventController.stream.listen((CounterEvent event) {
       if (event is UpCount) {
-        _count++;
+        _count += 1;
       } else {
-        _count--;
+        _count -= 1;
       }
+      _counterStateController.sink.add(_count);
     });
-    _counterStateController.sink.add(_count);
   }
 }
