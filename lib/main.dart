@@ -6,6 +6,7 @@ import 'package:provider_bloc_tutorial/pages/counter_provider_easy_example_page.
 import 'package:provider_bloc_tutorial/pages/counter_provider_example_page.dart';
 import 'package:provider_bloc_tutorial/pages/main_page.dart';
 import 'package:provider_bloc_tutorial/pages/money_provider_example_page.dart';
+import 'package:provider_bloc_tutorial/pages/stream_counter_example_page.dart';
 import 'package:provider_bloc_tutorial/providers/auth_provider.dart';
 import 'package:provider_bloc_tutorial/providers/counter_provider.dart';
 import 'package:provider_bloc_tutorial/providers/money_provider.dart';
@@ -56,7 +57,8 @@ class MyApp extends StatelessWidget {
                 print("yönlendirildi!");
                 return AuthProviderExamplePage();
               }
-            }
+            },
+            '/stream_counter_example': (context) => StreamCounterExample()
           },
         ),
       );

@@ -57,7 +57,18 @@ class MainPage extends StatelessWidget {
                   Navigator.of(context).pushNamed('/auth_provider_example');
                 },
                 icon: const Icon(Icons.person),
-                label: const Text('Auth Provider Example'))
+                label: const Text('Auth Provider Example')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(double.infinity, 55)),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/stream_counter_example');
+                },
+                icon: const Icon(Icons.stream),
+                label: const Text('Stream Counter Example'))
           ],
         ),
       ),
