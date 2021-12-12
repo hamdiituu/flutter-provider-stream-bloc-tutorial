@@ -68,7 +68,18 @@ class MainPage extends StatelessWidget {
                   Navigator.of(context).pushNamed('/stream_counter_example');
                 },
                 icon: const Icon(Icons.stream),
-                label: const Text('Stream Counter Example'))
+                label: const Text('Stream Counter Example')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(double.infinity, 55)),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/counter_bloc_basic_examle');
+                },
+                icon: const Icon(Icons.format_list_numbered),
+                label: const Text('Counter Bloc Example'))
           ],
         ),
       ),

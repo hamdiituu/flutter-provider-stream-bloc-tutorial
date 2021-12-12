@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_bloc_tutorial/pages/auth_provider_example_page.dart';
 import 'package:provider_bloc_tutorial/pages/auth_provider_protected_example_page.dart';
+import 'package:provider_bloc_tutorial/pages/counter_bloc_basic_example.dart';
 import 'package:provider_bloc_tutorial/pages/counter_provider_easy_example_page.dart';
 import 'package:provider_bloc_tutorial/pages/counter_provider_example_page.dart';
 import 'package:provider_bloc_tutorial/pages/main_page.dart';
@@ -58,7 +59,8 @@ class MyApp extends StatelessWidget {
                 return AuthProviderExamplePage();
               }
             },
-            '/stream_counter_example': (context) => StreamCounterExample()
+            '/stream_counter_example': (context) => StreamCounterExample(),
+            '/counter_bloc_basic_examle': (context) => CounterBlocBasicExample()
           },
         ),
       );
